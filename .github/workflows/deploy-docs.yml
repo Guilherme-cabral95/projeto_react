@@ -21,7 +21,7 @@ jobs:
       - name: install dependecies
         run: npm ci
       
-      - name: deploy Storybook
+      - name: Build Storybook
         run: npm run build-storybook
 
       - name: Deploy Storybook
