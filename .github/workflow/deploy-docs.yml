@@ -11,16 +11,15 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: action/checkout@v3
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
-        uses: action/setup-node@v3
+        uses: actions/setup-node@v3
         with:
           node-version: 16
 
       - name: install dependecies
         run: npm ci
-
       
       - name: deploy Storybook
         run: npm run build-storybook
